@@ -54,7 +54,7 @@ document.getElementById('8gb-btn').addEventListener('click', function() {
     addValue('memory', 0);
 });
 document.getElementById('16gb-btn').addEventListener('click', function() {
-    addValue('memory', 80);
+    addValue('memory', 180);
 });
 
 //storage button
@@ -65,7 +65,7 @@ document.getElementById('512gb-btn').addEventListener('click', function() {
     addValue('storage', 100);
 });
 document.getElementById('1tb-btn').addEventListener('click', function() {
-    addValue('storage', 150);
+    addValue('storage', 180);
 });
 
 //delivary button
