@@ -44,6 +44,7 @@ document.getElementById('apply-btn').addEventListener('click', function() {
     } else {
         document.getElementById('error-message').innerText = "Can't find this promo-code";
     }
+    document.getElementById('promo-input').value = '';
 })
 
 //get value by pressing button
