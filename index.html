@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Pro</title>
+    <!-- Tailwind -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Vanilla CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="container mt-16 mb-24">
+        <div class="grid grid-cols-2 w-3/4 mx-auto">
+            <div>
+                <img class="w-4/5 mx-auto" src="images/mac.png" alt="" srcset="">
+            </div>
+            <div>
+                <h1 class="text-4xl">Customize your Blue 24-inch iMac with Apple M1 chip</h1>
+                <p>Apple M1 chip 8-core CPU with 4 performance cores and 4 efficiency cores,7-core GPU and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic Mouse Magic Keyboard-US English.</p>
+                <br>
+                <!-- buttons -->
+                <!-- memory button -->
+                <div>
+                    <h3 class="font-semibold text-2xl mb-1 ml-3">Memory</h3>
+                    <div class="grid grid-cols-2">
+                        <button id="8gb-btn" class="btn">8GB unified memory</button>
+                        <button id="16gb-btn" class="btn">16GB unified memory</button>
+                    </div>
+                </div>
+                <!-- storage button -->
+                <div class="mt-2">
+                    <h3 class="font-semibold text-2xl mb-1 ml-3">Storage</h3>
+                    <div class="grid grid-cols-2">
+                        <button id="256gb-btn" class="btn">256GB SSD storage</button>
+                        <button id="512gb-btn" class="btn">512GB SSD storage</button>
+                        <button id="1tb-btn" class="btn mt-1">1TB SSD storage</button>
+                    </div>
+                </div>
+                <!-- delivary button -->
+                <div class="mt-2">
+                    <h3 class="font-semibold text-2xl mb-1 ml-3">Choose your delivery option</h3>
+                    <div class="grid grid-cols-1">
+                        <button id="freedelivary-btn" class="btn">Friday,Aug 25 FREE Prime Delivery</button>
+                        <button id="costlydelivary-btn" class="btn mt-1">Friday,Aug 21 Delivery Charge $20</button>
+                    </div>
+                </div>
+                <!-- values -->
+                <!-- fixed price -->
+                <div class="mt-16">
+                    <div class="mt-4 w-3/4 flex justify-between font-semibold text-2xl">
+                        <h4>Best price</h4>
+                        <h4>$<span id="fixed-cost">1299</span></h4>
+                    </div>
+                </div>
+                <!-- memory price -->
+                <div>
+                    <div class="mt-4 w-3/4 flex justify-between font-semibold text-2xl">
+                        <h4>Extra Memory Cost</h4>
+                        <h4>$<span id="memory-cost">0</span></h4>
+                    </div>
+                </div>
+                <!-- storage price -->
+                <div>
+                    <div class="mt-4 w-3/4 flex justify-between font-semibold text-2xl">
+                        <h4>Extra Storage Cost</h4>
+                        <h4>$<span id="storage-cost">0</span></h4>
+                    </div>
+                </div>
+                <!-- delivary cost -->
+                <div>
+                    <div class="mt-4 w-3/4 flex justify-between font-semibold text-2xl">
+                        <h4>Delivery Charge</h4>
+                        <h4>$<span id="delivary-cost">0</span></h4>
+                    </div>
+                </div>
+                <hr>
+                <!-- total price -->
+                <div>
+                    <div class="mt-4 w-3/4 flex justify-between font-semibold text-2xl">
+                        <h4>Total Price</h4>
+                        <h4>$<span id="subtotal-cost">1299</span></h4>
+                    </div>
+                </div>
+                <!-- promo code -->
+                <div class="mt-5">
+                    <input id="promo-input" type="text">
+                    <button id="apply-btn" class="special-btn">Apply</button>
+                    <h1 class="overflow-hidden" id="error-message"></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <footer class="flex align-center justify-center font-bold text-3xl mb-8">
+        <h1>Total:</h1>
+        <h1>$<span id="final-cost">1299</span></h1>
+    </footer>
+    <!-- Javascript -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
